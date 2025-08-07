@@ -6,7 +6,7 @@ const testimonials = [
     {
         name: "Rehman Shahid",
         company: "RHR Creative",
-        rating: 5,
+        rating: 3,
         feedback: `Amazing Experience!
 Mujhe apni e commerce website banwani thi or honestly I am so glad ke maine Uzair se contact kia unhon ne RHR Creative ko sirf ek website nahi, ek complete system bana diya!
 Website ka design clean or modern hai, email alerts for every step (order placed, product added, delivery completed), FAQs section for costumer support everything was handled professionally. Highly recommended! 🥰`,
@@ -14,7 +14,7 @@ Website ka design clean or modern hai, email alerts for every step (order placed
     {
         name: "Rehman Shahid",
         company: "RHR Creative",
-        rating: 5,
+        rating: 4,
         feedback: `Amazing Experience!
 Mujhe apni e commerce website banwani thi or honestly I am so glad ke maine Uzair se contact kia unhon ne RHR Creative ko sirf ek website nahi, ek complete system bana diya!
 Website ka design clean or modern hai, email alerts for every step (order placed, product added, delivery completed), FAQs section for costumer support everything was handled professionally. Highly recommended! 🥰`,
@@ -32,7 +32,7 @@ Website ka design clean or modern hai, email alerts for every step (order placed
 
 const Testimonials = () => {
     return (
-        <div id='testi' className='min-h-screen py-16 px-4 md:px-16 bg-gradient-to-b from-[#8bffb411] to-[#ffff8b1c]'>
+        <div id='testi' className='min-h-screen py-16 px-4 md:px-16 bg-gradient-to-b from-[#81f5aa1d] to-[#ffff8b1b]'>
             {/* Section Header */}
             <div className='flex flex-col items-center justify-center w-full'>
                 <motion.h3
@@ -66,7 +66,7 @@ const Testimonials = () => {
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
                         transition={{ duration: 0.5, delay: index * 0.3 }}
-                        className="relative bg-white/30 backdrop-blur-xl border border-white/20 rounded-2xl p-6 shadow-xl hover:shadow-2xl transition duration-300"
+                        className="relative bg-white/20 backdrop-blur-xl border border-white/20 rounded-2xl p-6 shadow-xl hover:shadow-2xl transition duration-300"
                     >
                         <div className="flex justify-between items-start mb-4">
                             <div>

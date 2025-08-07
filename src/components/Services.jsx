@@ -49,7 +49,7 @@ const Services = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="min-h-screen px-4 py-14 md:px-16 bg-gradient-to-b from-[#ffdfdf67] to-[#00b7ff0e]"
+      className="min-h-screen px-4 py-14 md:px-16 bg-gradient-to-b from-[#fab1b120] to-[#8bdbfb1b]"
     >
       <div className='flex flex-col items-center justify-center w-full text-center'>
         <motion.h3

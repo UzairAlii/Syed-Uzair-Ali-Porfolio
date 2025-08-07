@@ -41,7 +41,7 @@ const Portfolio = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.6 }}
-      className="min-h-screen py-16 px-4 md:px-16 bg-gradient-to-b from-[#00b7ff0e] to-[#8bffb411]">
+      className="min-h-screen py-16 px-4 md:px-16 bg-gradient-to-b from-[#8bdbfb1b] to-[#81f5aa1d]">
       <motion.h3
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}

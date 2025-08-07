@@ -5,7 +5,7 @@ import { motion } from "motion/react";
 const About = () => {
     return (
         <motion.div
-            id='about' className='w-full px-5 md:px-[12%] py-14 bg-gradient-to-b from-white to-[#ffdfdf67] scroll-mt-20'>
+            id='about' className='w-full px-5 md:px-[12%] py-14 bg-gradient-to-b from-white to-[#fab1b120] scroll-mt-20'>
             <motion.h3
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
