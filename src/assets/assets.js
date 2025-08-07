@@ -26,13 +26,14 @@ import uiux from "./uiux.png"
 import seo from "./seo.png"
 import vsCode from "./vs-code.svg"
 import education from "./education.png"
+import yellowStar from "./yellowStar.png"
+import greyStar from "./greyStar.png"
 import rightArrow from "./right-arrow.png"
 import mail from "./mail.png"
 import ecomus from "./ecomus.PNG"
 import rhr from "./rhr.PNG"
 import navbarBG from "./navbar-bg.jpg"
 import profilePic from "./uzair.jpg"
-import uzairBig from "./uzairBig.jpg"
 import metro from "./metrobank.jpg"
 import drSmith from "./dr-smith.jpg"
 import tailwind from "./tailwind.webp"
@@ -49,6 +50,8 @@ export const Images = {
     darkMode,
     hamburger,
     cancel,
+    yellowStar,
+    greyStar,
     rightChevron,
     rhr,
     profilePic,
@@ -56,7 +59,6 @@ export const Images = {
     hello,
     tailwind,
     metro,
-    uzairBig,
     CL,
     projects,
     education,

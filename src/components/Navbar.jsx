@@ -85,6 +85,7 @@ const Navbar = () => {
                     <li><button onClick={() => handleNavClick('about')} className='ovo text-md text-black'>About</button></li>
                     <li><button onClick={() => handleNavClick('services')} className='ovo text-md text-black'>Services</button></li>
                     <li><button onClick={() => handleNavClick('portfolio')} className='ovo text-md text-black'>Portfolio</button></li>
+                    <li><button onClick={() => handleNavClick('testi')} className='ovo text-md text-black'>Testimonials</button></li>
                     <li><button onClick={() => handleNavClick('contact')} className='ovo text-md text-black'>Contact</button></li>
 
                 </motion.ul>
@@ -97,7 +98,7 @@ const Navbar = () => {
                     transition={{ duration: 0.8 }}
                 className='hidden md:flex items-center gap-5'>
 
-                    <a href="https://www.instagram.com/syed.uzair.ali01?igsh=MWludGh0dmN3a2dzOA==" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.instagram.com/developer_uzair_ali?igsh=MWludGh0dmN3a2dzOA==" target="_blank" rel="noopener noreferrer">
                         <img src={Images.insta} alt='Instagram' className='w-4' />
                     </a>
                     <a href="https://www.facebook.com/share/1ELT9FvjCf/?mibextid=qi2Omg" target="_blank" rel="noopener noreferrer">
@@ -163,6 +164,12 @@ const Navbar = () => {
                         <li className="flex items-center justify-between py-3 border-b border-[#00000041]">
                             <button className="ovo text-md text-black w-full text-left" onClick={() => handleNavClick('portfolio')}>
                                 Portfolio
+                            </button>
+                            <img className="w-3" src={Images.rightChevron} alt="" />
+                        </li>
+                        <li className="flex items-center justify-between py-3 border-b border-[#00000041]">
+                            <button className="ovo text-md text-black w-full text-left" onClick={() => handleNavClick('testi')}>
+                                Testimonials
                             </button>
                             <img className="w-3" src={Images.rightChevron} alt="" />
                         </li>

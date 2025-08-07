@@ -30,7 +30,7 @@ const About = () => {
                     className='w-full md:w-[30%] flex justify-center'>
                     <img
                         className='w-48 h-48 md:w-60 md:h-60 object-cover rounded-full border-4 border-gray-300 shadow-lg hover:scale-105 transition duration-300'
-                        src={Images.uzairBig}
+                        src={Images.profilePic}
                         alt="Uzair"
                     />
                 </motion.div>

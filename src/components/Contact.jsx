@@ -74,7 +74,7 @@ const Contact = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.6 }}
-      className="py-16 px-4 mx-auto bg-gradient-to-b from-[#8bffb411] to-[#8bffb411] flex flex-col items-center justify-center relative">
+      className="py-16 px-4 mx-auto bg-gradient-to-b from-[#ffff8b1c] to-[#8bffb411] flex flex-col items-center justify-center relative">
       {/* Toast Notification */}
       {showToast && (
         <div className="fixed top-5 right-5 bg-green-600 text-white px-5 py-3 rounded-lg shadow-lg animate-slide-in z-50">

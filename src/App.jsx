@@ -9,6 +9,7 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 import TermsOfService from './components/TermsOfService'
 import PrivacyPolicy from './components/PrivacyPolicy'
+import Testimonials from './components/Testimonials'
 
 const Home = () => (
   <div>
@@ -17,6 +18,7 @@ const Home = () => (
     <About />
     <Services />
     <Portfolio />
+    <Testimonials />
     <Contact />
  
   </div>
