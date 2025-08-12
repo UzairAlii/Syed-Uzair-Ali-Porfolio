@@ -6,7 +6,7 @@ const testimonials = [
     {
         name: "Rehman Shahid",
         company: "RHR Creative",
-        rating: 3,
+        rating: 5,
         feedback: `Amazing Experience!
 Mujhe apni e commerce website banwani thi or honestly I am so glad ke maine Uzair se contact kia unhon ne RHR Creative ko sirf ek website nahi, ek complete system bana diya!
 Website ka design clean or modern hai, email alerts for every step (order placed, product added, delivery completed), FAQs section for costumer support everything was handled professionally. Highly recommended! 🥰`,
@@ -14,7 +14,7 @@ Website ka design clean or modern hai, email alerts for every step (order placed
     {
         name: "Rehman Shahid",
         company: "RHR Creative",
-        rating: 4,
+        rating: 5,
         feedback: `Amazing Experience!
 Mujhe apni e commerce website banwani thi or honestly I am so glad ke maine Uzair se contact kia unhon ne RHR Creative ko sirf ek website nahi, ek complete system bana diya!
 Website ka design clean or modern hai, email alerts for every step (order placed, product added, delivery completed), FAQs section for costumer support everything was handled professionally. Highly recommended! 🥰`,
