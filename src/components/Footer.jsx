@@ -15,7 +15,7 @@ const Footer = () => {
           </div>
           <div className="flex items-center text-gray-800 mt-1">
             <img src={Images.mail} className='w-5 mr-3 invert' alt="" />
-            <span className="text-sm text-[#ffffffd9] font-extralight">uzairali89347@gmail.com</span>
+            <span className="text-sm text-[#ffffffd9] font-extralight">uzairali.services@outlook.com</span>
           </div>
         </div>
 
