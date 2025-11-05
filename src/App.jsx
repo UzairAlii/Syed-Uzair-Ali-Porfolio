@@ -17,7 +17,7 @@ const Home = () => (
 
      <img
         src={Images.gredientBg}
-        className="fixed inset-0 w-full h-full object-cover -z-1 opacity-40 pointer-events-none"
+        className="fixed inset-0 w-full h-full object-cover -z-1 opacity-50 pointer-events-none"
       />
     
     <LandingPage />

@@ -188,7 +188,7 @@ const Contact = () => {
       <GradientButton
         type="submit"
         disabled={isSubmitting}
-        className="w-[40%] font-medium flex justify-center items-center self-center"
+        className="w-[60%] md:w-[40%] font-medium flex justify-center items-center self-center py-4"
       >
         {isSubmitting ? (
           <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
