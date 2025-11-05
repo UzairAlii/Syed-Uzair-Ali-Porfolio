@@ -17,7 +17,7 @@ Website ka design clean or modern hai, email alerts for every step (order placed
 
 const Testimonials = () => {
     return (
-        <div id='testi' className='min-h-screen py-16 px-4 md:px-16 bg-gradient-to-b from-[#81f5aa1d] to-[#ffff8b1b]'>
+        <div id='testi' className='min-h-screen py-16 px-4 md:px-16'>
             {/* Section Header */}
             <div className='flex flex-col items-center justify-center w-full'>
                 <motion.h3

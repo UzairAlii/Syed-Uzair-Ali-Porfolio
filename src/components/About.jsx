@@ -5,7 +5,7 @@ import { motion } from "motion/react";
 const About = () => {
     return (
         <motion.div
-            id='about' className='w-full px-5 md:px-[12%] py-14 bg-gradient-to-b from-white to-[#fab1b120] scroll-mt-20'>
+            id='about' className='w-full px-5 md:px-[12%] py-14 scroll-mt-20'>
             <motion.h3
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -60,7 +60,7 @@ const About = () => {
                         }, {
                             img: Images.projects,
                             title: "Projects",
-                            desc: "Built 2 frontend-only projects and 2 full stack applications"
+                            desc: "Built 1 Upwork Project, 2 full stack project and 2 frontend-only project"
                         }].map((card, i) => (
                             <motion.div
                                 key={i}

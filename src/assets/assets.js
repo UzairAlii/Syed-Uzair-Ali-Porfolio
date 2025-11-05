@@ -34,6 +34,8 @@ import ecomus from "./ecomus.PNG"
 import rhr from "./rhr.PNG"
 import navbarBG from "./navbar-bg.jpg"
 import profilePic from "./uzair.jpg"
+import gredientBg from "./gredient-bg.jpg"
+import thumbnail from "./thumbnail.jpg"
 import metro from "./metrobank.jpg"
 import drSmith from "./dr-smith.jpg"
 import tailwind from "./tailwind.webp"
@@ -41,8 +43,10 @@ import tailwind from "./tailwind.webp"
 
 export const Images = {
     insta,
+    gredientBg,
     fb,
     linkedIn,
+    thumbnail,
     github,
     mail,
     navbarBG,

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Images } from '../assets/assets'
 import { motion } from "motion/react";
+import GradientButton from '../lightswind/GradientButton';
 
 
 const LandingPage = () => {
@@ -17,7 +18,7 @@ const LandingPage = () => {
           initial={{ scale: 0 }}
           whileInView={{ scale: 1 }}
           transition={{ duration: 0.8, type: 'spring', stiffness: 100 }}
-          className="w-full h-full rounded-full bg-white relative z-10 flex items-center justify-center p-[4px]">
+          className="w-full h-full rounded-full relative z-10 flex items-center justify-center p-[4px]">
           <img
             src={Images.profilePic}
             alt="Profile"
@@ -63,13 +64,14 @@ const LandingPage = () => {
         transition={{ delay: 1.2, duration: 1 }}
         className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-4">
         <a href="#contact">
-          <motion.button
+          {/* <motion.div
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           className="flex items-center gap-3 px-6 py-3 rounded-full bg-black text-white hover:bg-gray-900 transition duration-300">
           Contact me
           <img className='w-5 invert rotate-[135deg]' src={Images.rightArrow} alt="" />
-        </motion.button>
+        </motion.div> */}
+          <GradientButton size="lg">Contact me</GradientButton>
         </a>
       </motion.div>
     </motion.div>

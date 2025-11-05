@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from "motion/react";
+import GradientButton from '../lightswind/GradientButton';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -74,7 +75,7 @@ const Contact = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.6 }}
-      className="py-16 px-4 mx-auto bg-gradient-to-b from-[#ffff8b1b] to-[#ffff8b1b] flex flex-col items-center justify-center relative">
+      className="py-16 px-4 mx-auto flex flex-col items-center justify-center relative">
       {/* Toast Notification */}
       {showToast && (
         <div className="fixed top-5 right-5 bg-green-600 text-white px-5 py-3 rounded-lg shadow-lg animate-slide-in z-50">
@@ -111,8 +112,8 @@ const Contact = () => {
         </motion.p>
       </div>
 
-      <form onSubmit={onSubmit} className="grid gap-6 w-full md:w-1/2">
-        <div className='flex md:flex-row flex-col items-center justify-center gap-5'>
+      <form onSubmit={onSubmit} className="flex flex-col items-center justify-center gap-6 w-full md:w-1/2">
+        <div className='flex md:flex-row flex-col items-center justify-center gap-5 w-full'>
           <div className='flex flex-col w-full gap-5'>
             <motion.input
               type="text"
@@ -146,7 +147,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div>
+        <div className='w-full'>
           <motion.input
             type="text"
             name="subject"
@@ -162,7 +163,7 @@ const Contact = () => {
           {errors.subject && <p className="text-red-500 text-sm mt-1">{errors.subject}</p>}
         </div>
 
-        <div>
+        <div className='w-full'>
           <motion.textarea
             name="message"
             placeholder="Message"
@@ -178,20 +179,24 @@ const Contact = () => {
           {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message}</p>}
         </div>
 
-        <motion.button
-          type="submit"
-          disabled={isSubmitting}
-          initial={{ y: 10, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        transition={{ delay: 1.2, duration: 0.5 }}
-          className="bg-black hover:bg-[#000000e7] transition text-white py-3 rounded-md w-full font-medium flex justify-center items-center"
-        >
-          {isSubmitting ? (
-            <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
-          ) : (
-            'Send Message'
-          )}
-        </motion.button>
+        <motion.div
+      initial={{ y: 10, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{ delay: 1.2, duration: 0.5 }}
+      className='w-full flex items-center justify-center'
+    >
+      <GradientButton
+        type="submit"
+        disabled={isSubmitting}
+        className="w-[40%] font-medium flex justify-center items-center self-center"
+      >
+        {isSubmitting ? (
+          <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+        ) : (
+          "Send Message"
+        )}
+      </GradientButton>
+    </motion.div>
       </form>
 
       {/* Toast Slide-in Animation */}

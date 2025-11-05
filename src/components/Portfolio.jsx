@@ -4,6 +4,12 @@ import { motion } from "motion/react";
 
 const projects = [
   {
+    title: "The Wellness Method (First Upwork Project)",
+    image: Images.thumbnail,
+    github: "https://github.com/UzairAlii/wellme",
+    live: "https://thewellnessmethod.com"
+  },
+  {
     title: "RHR Creative (Client Project)",
     image: Images.rhr,
     github: "https://github.com/UzairAlii/RHR-Creative",
@@ -30,10 +36,10 @@ const projects = [
 ];
 
 const Portfolio = () => {
-  const [visibleProducts, setVisibleProducts] = useState(2);
+  const [visibleProducts, setVisibleProducts] = useState(3);
 
   const handleLoadMore = () => {
-    setVisibleProducts((prev) => prev + 2);
+    setVisibleProducts((prev) => prev + 3);
   };
 
   return (
@@ -41,7 +47,7 @@ const Portfolio = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.6 }}
-      className="min-h-screen py-16 px-4 md:px-16 bg-gradient-to-b from-[#8bdbfb1b] to-[#81f5aa1d]">
+      className="min-h-screen py-16 px-4 md:px-16">
       <motion.h3
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -60,7 +66,7 @@ const Portfolio = () => {
         transition={{ delay: 0.6, duration: 0.6 }}
         className='text-sm md:text-base text-center text-gray-700 leading-relaxed'> Explore a showcase of my recent frontend and full stack work</motion.p>
 
-      <div className="grid gap-12 sm:grid-cols-1 md:grid-cols-2 mt-10">
+      <div className="grid gap-12 sm:grid-cols-1 md:grid-cols-3 mt-10">
         {projects.slice(0, visibleProducts).map((project, index) => (
           <motion.div key={index}
             initial={{ opacity: 0 }}

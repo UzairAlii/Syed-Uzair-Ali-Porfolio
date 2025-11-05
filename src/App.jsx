@@ -10,9 +10,15 @@ import Footer from './components/Footer'
 import TermsOfService from './components/TermsOfService'
 import PrivacyPolicy from './components/PrivacyPolicy'
 import Testimonials from './components/Testimonials'
+import { Images } from './assets/assets'
 
 const Home = () => (
-  <div>
+  <div className="relative">
+
+     <img
+        src={Images.gredientBg}
+        className="fixed inset-0 w-full h-full object-cover -z-1 opacity-40 pointer-events-none"
+      />
     
     <LandingPage />
     <About />
