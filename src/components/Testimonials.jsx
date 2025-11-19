@@ -6,10 +6,22 @@ const testimonials = [
     {
         name: "Rehman Shahid",
         company: "RHR Creative",
-        rating: 5,
+        rating: 5.0,
+        platform: "Outsource Project",
+        country : "Pakistan, Karachi",
+        countryImg : Images.pakistan,
         feedback: `Amazing Experience!
 Mujhe apni e commerce website banwani thi or honestly I am so glad ke maine Uzair se contact kia unhon ne RHR Creative ko sirf ek website nahi, ek complete system bana diya!
 Website ka design clean or modern hai, email alerts for every step (order placed, product added, delivery completed), FAQs section for costumer support everything was handled professionally. Highly recommended! 🥰`,
+    },
+    {
+        name: "Miles Hanson",
+        company: "The Wellness Method",
+        rating: 5.0,
+        platform: "Upwork",
+        country : "United States, Austin",
+        countryImg : Images.USA,
+        feedback: `Uzair helped us build a custom coded site that looks incredible. It's for an app startup and he delivered exactly what we needed, went above and beyond, and communicated quickly and clearly. Will definitely be working with him in the future. Highly recommend!`,
     },
 
 
@@ -55,10 +67,15 @@ const Testimonials = () => {
                     >
                         <div className="flex justify-between items-start mb-4">
                             <div>
-                                <h3 className="text-gray-900 font-bold text-base">{testimonial.name}</h3>
+                                <h3 className="text-gray-900 font-bold text-md">{testimonial.name}</h3>
+                                <h3 className="text-gray-900 font-medium text-sm">From {testimonial.platform}</h3>
                                 <p className="text-gray-600 text-sm">{testimonial.company}</p>
                             </div>
-                            <div className="text-right">
+                            <div className="text-right flex items-end flex-col">
+                                <div className='flex gap-3'>
+                                    <h3 className='text-sm'>{testimonial.country}</h3>
+                                    <img className='w-5' src={testimonial.countryImg} alt="" />
+                                </div>
                                 <div className="flex items-center gap-1 text-yellow-400 text-sm">
                                     {[...Array(5)].map((_, i) => (
                                         <img

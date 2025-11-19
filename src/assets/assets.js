@@ -24,6 +24,8 @@ import deployment from "./deployment.png"
 import fullStack from "./fullStack.png"
 import uiux from "./uiux.png"
 import seo from "./seo.png"
+import pakistan from "./pakistan.png"
+import USA from "./usa.png"
 import vsCode from "./vs-code.svg"
 import education from "./education.png"
 import yellowStar from "./yellowStar.png"
@@ -33,7 +35,7 @@ import mail from "./mail.png"
 import ecomus from "./ecomus.PNG"
 import rhr from "./rhr.PNG"
 import navbarBG from "./navbar-bg.jpg"
-import profilePic from "./uzair.jpg"
+import profilePic from "./copy.jpg"
 import gredientBg from "./gredient-bg.jpg"
 import thumbnail from "./thumbnail.jpg"
 import metro from "./metrobank.jpg"
@@ -50,6 +52,8 @@ export const Images = {
     github,
     mail,
     navbarBG,
+    pakistan,
+    USA,
     lightMode,
     darkMode,
     hamburger,

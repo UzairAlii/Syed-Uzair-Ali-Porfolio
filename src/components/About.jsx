@@ -2,6 +2,9 @@ import React from 'react'
 import { Images } from '../assets/assets'
 import { motion } from "motion/react";
 
+const aboutpara = "I am Uzair, a Full Stack Web Developer with 4 years of experience. I build all types of sites including business pages, online stores, and custom web apps using React, JavaScript, Tailwind CSS, Node.js and Express, My focus is on creating fast, modern and mobile friendly solutions that look great and are easy to use. One of my top best project was a full stack e-commerce store for RHR Creative, a laptop bags brand site"
+
+
 const About = () => {
     return (
         <motion.div
@@ -42,9 +45,7 @@ const About = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.6, duration: 0.6 }}
                         className='text-sm md:text-base text-gray-700 leading-relaxed text-center md:text-start'>
-                        As a full stack web developer and freelancer, I specialize in creating dynamic websites using React, Node.js, Express, and MongoDB.
-                        I handle both frontend and backend development, ensuring responsive design, smooth user experience, secure authentication,
-                        and efficient database integration. I deliver complete, scalable solutions to client's unique business needs.
+                        {aboutpara}
                     </motion.p>
 
                     {/* Cards */}
